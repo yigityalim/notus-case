@@ -1,3 +1,12 @@
+/**
+ * @fileoverview settings.tsx file
+ * Settings Component
+ *
+ * @author [Mehmet Yiğit Yalım](https://mehmetyigityalim.com)
+ * @licence MIT
+ * @version 1.0
+ */
+
 import React from "react";
 import * as Dialog from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -19,7 +28,7 @@ export function Settings() {
 
   return (
     <Dialog.Dialog>
-      <Dialog.DialogTrigger className="p-1.5 bg-patara-gray-100 rounded-lg inline-flex items-center justify-center">
+      <Dialog.DialogTrigger className="p-1.5 bg-patara-gray-100 rounded-lg inline-flex items-center justify-center hover:bg-patara-gray-75">
         <svg
           width="20"
           height="20"

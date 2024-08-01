@@ -1,30 +1,75 @@
-# React + TypeScript + Vite
+# Notus Case
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu case Notus firması tarafından istenmiştir.
 
-Currently, two official plugins are available:
+## İçerik
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Notus Case](#notus-case)
+  - [İçerik](#i̇çerik)
+  - [Gereksinimler](#gereksinimler)
+  - [Kurulum](#kurulum)
+  - [Kullanım](#kullanım)
+  - [Ekran Görüntüleri](#ekran-görüntüleri)
+  - [Lisans](#lisans)
 
-## Expanding the ESLint configuration
+## Gereksinimler
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/)
+- [Pnpm](https://pnpm.io/)
 
-- Configure the top-level `parserOptions` property like this:
+## Kurulum
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- Projeyi klonlayın
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+  ```bash
+  # Projeyi klonlayın
+  git clone https://github.com/yigityalim/notus-case.git
+  ```
+
+- Paketleri yükleyin
+
+  ```bash
+    # Proje dizinine gidin
+    cd notus-case
+
+    # Paketleri yükleyin
+    pnpm install
+  ```
+
+- Projeyi çalıştırın
+
+  ```bash
+    # Geliştirme modunda çalıştırın
+    pnpm dev
+
+    # Üretim modunda çalıştırın
+    pnpm build
+  ```
+
+## Kullanım
+
+- Projeyi çalıştırdıktan sonra tarayıcınızda `http://localhost:5173` adresine gidin.
+- TODO: add use case
+
+## Ekran Görüntüleri
+
+- Ana Sayfa
+
+![Ana Sayfa](./src/assets/img-1.jpeg)
+
+- Token seçim sayfası
+
+![Token seçim sayfası](./src/assets/img-4.png)
+
+- Ayarlar
+
+![Ayarlar](./src/assets/img-3.png)
+
+- Kullanıcı herhangi bir değişiklik yaptığında çıkan toast:
+
+![Toast](./src/assets/img-2.png)
+
+## Lisans
+
+Bu proje MIT lisansı ile lisanslanmıştır. Daha fazla bilgi için **[LICENCE.md](./LICENCE.md)** dosyasına bakabilirsiniz.
